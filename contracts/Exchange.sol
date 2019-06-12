@@ -8,15 +8,7 @@ import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 contract Exchange is Ownable{
 using SafeMath for uint256;
 
-ERC20 public tokenA;
-ERC20 public tokenB;
-
 uint256 public ratio = 1;
-
-constructor(ERC20 _tokenA, ERC20 _tokenB) public{
-  tokenA = ERC20(_tokenA);
-  tokenB = ERC20(_tokenB);
-}
 
 /*
 * @dev owner of contract can change ratio

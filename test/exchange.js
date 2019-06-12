@@ -42,10 +42,7 @@ contract('Exchange', function([_, wallet]) {
     );
 
     // Deploy Exchange
-    this.exchange = await Exchange.new(
-      this.tokenA.address,
-      this.tokenB.address
-    );
+    this.exchange = await Exchange.new();
 
 
     // transfer some tokens B to Exchange

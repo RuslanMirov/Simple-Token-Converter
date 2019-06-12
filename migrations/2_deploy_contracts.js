@@ -17,6 +17,6 @@ module.exports = function(deployer) {
 
   await deployer.deploy(TokenB, nameB, symbolB, decimals, total);
 
-  await deployer.deploy(Exchange, TokenA.address, TokenB.address);
+  await deployer.deploy(Exchange);
   })
 };
